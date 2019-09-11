@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title></title>
+		<link href="css/h-m-css.css" rel="stylesheet">
+		<script src="scr/jquery.js"></script>
+		<script src="scr/grained.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet"> 
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	</head>
+	
+	<body>
+	
+	<script>$(document).ready(function () {
+    demos();
+	var t = $('#main').position();
+	$('#text').css('top',t.top+50);
+});
+function demos() {
+
+    var options = {
+        "animate": true,
+        "patternWidth": 100,
+        "patternHeight": 100,
+        "grainOpacity": 0.1,
+        "grainDensity": 1.99,
+        "grainWidth": 2.39,
+        "grainHeight": 2.49
+    };
+    grained("#img1", options);
+	grained("#img2", options);
+	grained("#img3", options);
+var options = {
+        "animate": true,
+        "patternWidth": 100,
+        "patternHeight": 100,
+        "grainOpacity": 0.04,
+        "grainDensity": 1.99,
+        "grainWidth": 2.39,
+        "grainHeight": 2.49
+    };
+  grained("#bg", options);
+
+}
+	</script>
+		
+		<div id="bg">
+		<a href="rezadormishian.github.io" id="menu1">Bio</a>
+		<a href="rezadormishian.github.io" id="menu2">Blog</a>
+		<div id="text"></div>
+			<div id="main">
+				<div id="img2"></div>
+				<div id="img1"></div>
+				<div id="logo"></div>
+				<div id="img3"></div>
+				
+			</div>
+			</div>
+			<script src='core.js'></script>
+  <script type='text/javascript'>
+    const typewriter = new Typewriter('#text', {
+      loop: true,
+    });
+
+    typewriter.typeString('I am Reza Dormishian!')
+      .pauseFor(2500)
+      .deleteChars(16)
+      .typeString('Director , Producer & Screenwriter.')
+      .pauseFor(2500)
+      .deleteChars(35)
+      .typeString('not angry!')
+      .pauseFor(2500)
+      .start();
+  </script>
+	</body>
+	
+</html>
